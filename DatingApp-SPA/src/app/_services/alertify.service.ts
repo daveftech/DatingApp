@@ -10,7 +10,7 @@ export class AlertifyService {
 
   confirm(message: string, okCallback: () => any) {
     alertify.confirm(message, function(e) {
-      if(e) {
+      if (e) {
         okCallback();
       } else {}
     });
